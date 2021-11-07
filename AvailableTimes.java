@@ -1,12 +1,6 @@
 
-import java.util.List;
-import java.util.Map;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 
 public class AvailableTimes {
 	public static final LocalDateTime CURR_DATE = LocalDateTime.now();
