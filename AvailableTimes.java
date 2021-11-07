@@ -20,7 +20,7 @@ public class AvailableTimes {
 		if(inputLine.charAt(0) == ' ') inputLine = inputLine.substring(1);
 		String day = "" + inputLine.charAt(0);
 		int daysFromSaturday = 0;
-		if(day.equals("S")) {
+		if(day.equals("N")) {
 			daysFromSaturday = 1;
 		} else if(day.equals("M")) {
 			daysFromSaturday = 2;
