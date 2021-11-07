@@ -24,13 +24,13 @@ public class AvailableTimes {
 			daysFromSaturday = 1;
 		} else if(day.equals("M")) {
 			daysFromSaturday = 2;
-		} else if(day.equals("M")) {
-			daysFromSaturday = 3;
 		} else if(day.equals("T")) {
-			daysFromSaturday = 4;
+			daysFromSaturday = 3;
 		} else if(day.equals("W")) {
-			daysFromSaturday = 5;
+			daysFromSaturday = 4;
 		} else if(day.equals("R")) {
+			daysFromSaturday = 5;
+		} else if(day.equals("F")) {
 			daysFromSaturday = 6;
 		} else {
 			daysFromSaturday = 7;
