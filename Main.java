@@ -1,6 +1,8 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 
@@ -10,7 +12,9 @@ public class Main {
         ArrayList<String> homework = new ArrayList<>();
         ArrayList<String> classes = new ArrayList<>();
         String[] priority;
-        ArrayList<String> avalTimes = new ArrayList<>();
+        
+        HashMap<LocalDateTime, LocalDateTime> availTimes = new HashMap<>();
+        AvailableTimes avalT = new AvailableTimes(availTimes);
 
         File inputFile = new File("input.txt");
         Scanner reader = new Scanner(inputFile);
@@ -36,7 +40,7 @@ public class Main {
                 case 3:
                     String[] avalInput = line.split(",");
                     for (String time : avalInput) {
-                        avalTimes.add(time);
+                        avalT.addAvailTime(time);
                     }
                     break;
                 default:
